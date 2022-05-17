@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nui {
+            position:relative;
+            border: 1px solid #CDCDCD;
+            float:left;
+            margin-left:20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .nui:hover{
+            background: white;
+            border: 1px solid black;
+        }
+
+        .song {
+            position:relative;
+            border: 1px solid #CDCDCD;
+            float:left;
+            margin-left:20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .song:hover{
+            background: white;
+            border: 1px solid black;
+        }
+
+        .hoa {
+            position:relative;
+            border: 1px solid #CDCDCD;
+            float:left;
+            margin-left:20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .hoa:hover{
+            background: white;
+            border: 1px solid black;
+        }
+
+        .bo {
+            position:relative;
+            border: 1px solid #CDCDCD;
+            float:left;
+            text-align: center;
+            margin-left:20px;
+            margin-bottom: 20px;
+        }
+
+        .bo:hover{
+            background: white;
+            border: 1px solid black;
+        }
+
+        .chu {
+            clear:both;
+            padding-left:20px;
+        }
+
+        @media only screen and (min-width: 700px) {
+            .nui,.song,.hoa,.bo {
+                width:290px;
+            }
+
+            h1,h3,.chu {
+                width:100%;
+            }
+
+        }
+
+        @media only screen and (max-width: 700px) {
+            .nui, .song, .bo {
+                width: 290px;
+                float:left;
+            }
+            
+            .hoa {
+                width: 290px;
+                clear:both;
+            }
+
+            h1,h3 {
+                width:100%;
+            }
+
+            .chu {
+                clear:both;
+                width:100%
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .nui,.song,.hoa,.bo {
+                width:290px;
+            }
+
+            h1,h3 ,.chu {
+                width:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Image Gallery</h1>
+    <h3>Resize the browser window to see the effect.</h3>
+    <div class="nui">
+        <img width="290px" height="250px" src="https://cdn.pixabay.com/photo/2020/04/30/14/03/mountains-and-hills-5112952__480.jpg" alt="Nui">
+        <p>Add a description of the image here :))</p>
+    </div>
+    <div class="song">
+        <img width="290px" height="250px" src="https://vcdn-dulich.vnecdn.net/2021/12/24/An-Giang-0-jpeg-1470-1640315739.jpg" alt="song">
+        <p>Add a description of the image here :))</p>
+    </div>
+    <div class="hoa">
+        <img width="290px" height="250px" src="https://mayanhxachtaynhat.com/wp-content/uploads/2018/12/lay-net-01.png" alt="Hoa">
+        <p>Add a description of the image here :))</p>
+    </div>
+    <div class="bo">
+        <img width="290px" height="250px" src="https://anhducdigital.vn/media/news/1405_Macro-Lady-Bug-on-Green-Leaf-1600x1200-wide-wallpapers.net.jpg" alt="Bo">
+        <p>Add a description of the image here :))</p>
+    </div>
+    <div class="chu">
+        <p >This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+    </div>
+</body>
+</html>
